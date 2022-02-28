@@ -3,9 +3,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build-docker-image": "docker image build --tag gcr.io/astral-voyage-342117/microprojects:0.0.1",
-    "push-docker-image": "docker image push gcr.io/astral-voyage-342117/microprojects:0.0.1",
-    "deploy": "gcloud run deploy mini-proj-service --project astral-voyage-342117 --image gcr.io/astral-voyage-342117/microprojects:0.0.1 --max-instances 2"
+    "start": "next start",
+    "build-docker-image": "docker image build --tag gcr.io/astral-voyage-342117/microprojects:0.0.3 .",
+    "push-docker-image": "docker image push gcr.io/astral-voyage-342117/microprojects:0.0.3",
+    "deploy": "gcloud run deploy mini-proj-service --project astral-voyage-342117 --image gcr.io/astral-voyage-342117/microprojects:0.0.3 --max-instances 2"
   },
   "dependencies": {
     "next": "latest",
