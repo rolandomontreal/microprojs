@@ -22,7 +22,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Start page - should be installable
+          Start page - should be installable?
         </h1>
       </main>
     </div>
