@@ -1,7 +1,7 @@
 import styles from './Header.module.css';
-import HomeLogo from './HomeLogo';
-import GalleryLogo from './GalleryLogo';
-import AboutLogo from './AboutLogo';
+import HomeLogo from '../../svgicons/HomeLogo';
+import GalleryLogo from '../../svgicons/GalleryLogo';
+import AboutLogo from '../../svgicons/AboutLogo';
 
 const Header = () => {
   return (

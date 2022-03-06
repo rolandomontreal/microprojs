@@ -24,6 +24,10 @@ a {
   width: 100vw;
 }
 
+main {
+  flex: 1;
+}
+
 .blue-bg-0 {
   background-color: #7AA5BF;
 }
@@ -34,4 +38,24 @@ a {
 
 .text-dark-1 {
   color: #575757;
+}
+
+.text-light-0 {
+  color: #F2F2F2;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.text-large {
+  font-size: 16;
+}
+
+.text-body {
+  font-size: 12px;
 }

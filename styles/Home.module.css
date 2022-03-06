@@ -1,8 +1,28 @@
 .main {
-  padding: 5rem 0;
-  flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  width: 75%;
+  padding: 40px 0;
+}
+
+.improbabilityDriveButton {
+  display: flex;
   justify-content: center;
-  align-items: center;
+}
+
+.textContainer h2 {
+  margin: 0px;
+}
+
+.textContainer h3 {
+  margin: 0;
+}
+
+.textContainer p {
+  line-height: 20px;
+}
+
+.buttonContainer button {
+  margin-bottom: 16px;
 }
