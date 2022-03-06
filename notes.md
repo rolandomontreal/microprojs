@@ -1,1 +1,0 @@
-gcloud config set run/region europe-west1

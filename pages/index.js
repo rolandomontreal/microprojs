@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { useEffect } from 'react';
+import Header from '../components/Header';
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -7,10 +8,10 @@ export default function Home() {
     fetch('https://jsonplaceholder.typicode.com/todos/1')
       .then(response => response.json())
       .then(json => {
-        console.log('[JSON API]:')
-        console.log(json)
+        // Dev for testing service workers
       });
   }, []);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -21,9 +22,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Start page - should be installable?
-        </h1>
+        <Header />
+
       </main>
     </div>
   );

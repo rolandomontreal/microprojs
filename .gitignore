@@ -36,3 +36,7 @@ yarn-error.log*
 # lock files
 yarn.lock
 package-lock.json
+
+
+# Own notes
+/notes
