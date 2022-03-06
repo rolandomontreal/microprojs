@@ -1,0 +1,17 @@
+.header {
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px 0px;
+  width: 100vw;
+}
+
+.logoBox {
+  display: flex;
+  align-items: center;
+}
+
+.logoBoxMultiItems svg {
+  margin-left: 8px;
+}

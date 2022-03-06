@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { useEffect } from 'react';
-import Header from '../components/Header';
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -13,7 +12,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>Micro Projects</title>
         <link rel="icon" href="/favicon.ico" />
@@ -22,9 +21,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Header />
-
+        <p>I am main</p>
       </main>
-    </div>
+    </>
   );
 }

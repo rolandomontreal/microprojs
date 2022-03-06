@@ -13,3 +13,25 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.blue-bg-0 {
+  background-color: #7AA5BF;
+}
+
+.text-dark-0 {
+  color: #1B1B1B;
+}
+
+.text-dark-1 {
+  color: #575757;
+}
