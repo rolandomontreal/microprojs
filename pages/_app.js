@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { useEffect, useState } from 'react'
 import Header from '../components/Header/Header';
 import '../styles/globals.css'
@@ -31,10 +32,15 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <div className='container'>
-      <Header />
-      <Component {...pageProps} />
-    </div>
+    <>
+      <Head>
+        <title>Micro Projects</title>
+      </Head>
+      <div className='container'>
+        <Header />
+        <Component {...pageProps} />
+      </div>
+    </>
   );
 }
 
