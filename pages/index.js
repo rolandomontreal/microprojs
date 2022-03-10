@@ -38,8 +38,8 @@ export default function Home() {
             <p className='text-dark-1 text-body medium'>A collection of small projects, testing various web technologies, too specialized for building entire projects, but still interesting enough to build something concrete from.</p>
           </div>
           <div className={styles.buttonContainer}>
-            <NavButton buttonText={'EXPLORE'} icon={<GalleryLogo />} />
-            <NavButton buttonText={'SOURCE'} icon={<GalleryLogo />} />
+            <NavButton href="/gallery" buttonText={'EXPLORE'} icon={<GalleryLogo />} />
+            <NavButton href="https://github.com/rolandomontreal/microprojs" buttonText={'SOURCE'} icon={<GalleryLogo />} />
           </div>
         </div>
       </div>
