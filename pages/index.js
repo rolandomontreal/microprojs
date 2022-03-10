@@ -27,17 +27,21 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <div className={styles.improbabilityDriveButton}>
-        <ImprobabilityDriveButton />
-      </div>
-      <div className={styles.textContainer}>
-        <h2 className='text-dark-0 semi-bold'>Micro Projects</h2>
-        <h3 className='text-dark-0 semi-bold'>by Jake</h3>
-        <p className='text-dark-1 text-body medium'>A collection of small projects, testing various web technologies, too specialized for building entire projects, but still interesting enough to build something concrete from.</p>
-      </div>
-      <div className={styles.buttonContainer}>
-        <NavButton buttonText={'EXPLORE'} icon={<GalleryLogo />} />
-        <NavButton buttonText={'SOURCE'} icon={<GalleryLogo />} />
+      <div className={styles.container}>
+        <div className={styles.improbabilityDriveButton}>
+          <ImprobabilityDriveButton />
+        </div>
+        <div className={styles.textAndButtonContainer}>
+          <div className={styles.textContainer}>
+            <h2 className='text-dark-0 semi-bold'>Micro Projects</h2>
+            <h3 className='text-dark-0 semi-bold'>by Jake</h3>
+            <p className='text-dark-1 text-body medium'>A collection of small projects, testing various web technologies, too specialized for building entire projects, but still interesting enough to build something concrete from.</p>
+          </div>
+          <div className={styles.buttonContainer}>
+            <NavButton buttonText={'EXPLORE'} icon={<GalleryLogo />} />
+            <NavButton buttonText={'SOURCE'} icon={<GalleryLogo />} />
+          </div>
+        </div>
       </div>
     </main>
   );

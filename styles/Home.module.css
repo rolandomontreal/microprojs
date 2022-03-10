@@ -1,13 +1,34 @@
 .main {
   display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   width: 75%;
   padding: 40px 0;
+  gap: 40px
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    flex-direction: row-reverse;
+    gap: 80px
+  }
 }
 
 .improbabilityDriveButton {
   display: flex;
+  justify-content: center;
+}
+
+.textAndButtonContainer {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -25,4 +46,15 @@
 
 .buttonContainer button {
   margin-bottom: 16px;
+}
+
+@media screen and (min-width: 600px) {
+  .buttonContainer {
+    display: flex;
+    gap: 24px;
+  }
+
+  .buttonContainer button {
+    margin-bottom: 0px;
+  }
 }
