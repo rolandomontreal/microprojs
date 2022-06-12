@@ -1,8 +1,9 @@
+import Link from 'next/link';
+import Image from 'next/image';
 import styles from './Header.module.css';
 import HomeLogo from '../../svgicons/HomeLogo';
 import GalleryLogo from '../../svgicons/GalleryLogo';
 import AboutLogo from '../../svgicons/AboutLogo';
-import Link from 'next/link';
 
 const Header = () => {
   return (
@@ -14,8 +15,14 @@ const Header = () => {
       </Link>
       <div className={`${styles.logoBox} ${styles.logoBoxMultiItems}`}>
         <Link href="/gallery">
-          <a>
-            <GalleryLogo />
+          <a className={styles.imgIconLink}>
+            <Image
+              className={styles.imgIcon}
+              src={'/icons/gallery.png'}
+              layout="intrinsic"
+              height={100}
+              width={100}
+            />
           </a>
         </Link>
         <Link href="/about">

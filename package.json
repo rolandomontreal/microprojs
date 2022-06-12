@@ -4,13 +4,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "build-docker-image": "docker image build --tag gcr.io/astral-voyage-342117/microprojects:0.0.5 .",
-    "push-docker-image": "docker image push gcr.io/astral-voyage-342117/microprojects:0.0.5",
-    "deploy": "gcloud run deploy mini-proj-service --project astral-voyage-342117 --image gcr.io/astral-voyage-342117/microprojects:0.0.5 --max-instances 2"
+    "build-docker-image": "docker image build --tag gcr.io/astral-voyage-342117/microprojects:0.0.7 .",
+    "push-docker-image": "docker image push gcr.io/astral-voyage-342117/microprojects:0.0.7",
+    "deploy": "gcloud run deploy mini-proj-service --project astral-voyage-342117 --image gcr.io/astral-voyage-342117/microprojects:0.0.7 --max-instances 2"
   },
   "dependencies": {
     "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.12",
+    "sass": "^1.52.3"
   }
 }
