@@ -1,0 +1,26 @@
+.card {
+  aspect-ratio: 10 / 16;
+  min-width: min(80vw, 300px);
+  border-radius: 10px;
+  padding: 2rem;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  scroll-snap-align: center;
+
+  h4, p {
+    color: white;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+    margin-bottom: .4rem;
+    font-weight: 500;
+  }
+
+  p {
+    margin: 0;
+    font-size: .8rem;
+  }
+}
