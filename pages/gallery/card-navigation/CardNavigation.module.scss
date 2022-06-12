@@ -11,5 +11,6 @@
   overflow: auto;
   scroll-snap-type: x mandatory;
   height: 100%;
-  padding: 0 10vw;
+  padding-left: 10vw;
+  padding-right: 100px !important; // 
 }
