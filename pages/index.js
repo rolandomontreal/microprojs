@@ -18,11 +18,11 @@ const ImprobabilityDriveButton = () => {
 
 export default function Home() {
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/todos/1')
-      .then(response => response.json())
-      .then(json => {
-        // Dev for testing service workers
-      });
+    // fetch('https://jsonplaceholder.typicode.com/todos/1')
+    //   .then(response => response.json())
+    //   .then(json => {
+    //     // Dev for testing service workers
+    //   });
   }, []);
 
   return (

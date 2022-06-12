@@ -3,9 +3,11 @@ import styles from './CardNavigation.module.scss';
 
 const CardNavigation: NextPage = () => {
   return (
-    <div className={styles.container}>
-      I am the card navigation;
-    </div>
+    <main>
+      <div className={styles.container}>
+        I am the card navigation;yarn
+      </div>
+    </main>
   );
 }
 

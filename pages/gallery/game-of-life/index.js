@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { getStartGrid } from '../../../lib/helpers';
-import styles from './styles.module.css';
+import styles from './styles.module.scss';
 
 const GameOfLife = () => {
   const [grid] = useState(getStartGrid());
