@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { useEffect, useState } from 'react'
 import Header from '../components/Header/Header';
-import '../styles/globals.css'
+import '../styles/globals.scss'
 
 function MyApp({ Component, pageProps }) {
   const [deferredPrompt, setDeferredPromt] = useState(null);

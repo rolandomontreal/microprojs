@@ -49,10 +49,10 @@ const XCircle = () => {
 
 const Gallery = () => {
   return (
-    <main>
+    <main className={styles.container}>
       {pages.map(page => {
         return (
-          <Link key={page.path} href={'/gallery/' + page.path}>
+          <Link key={page.path} href={'/gallery' + page.path}>
             <a>
               <div className={styles.card}>
                 <h3>{page.title}</h3>

@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from './Header.module.css';
+import styles from './Header.module.scss';
 import HomeLogo from '../../svgicons/HomeLogo';
 import GalleryLogo from '../../svgicons/GalleryLogo';
 import AboutLogo from '../../svgicons/AboutLogo';
 
 const Header = () => {
   return (
-    <header className={`${styles.header} blue-bg-0 text-dark-0`}>
+    <header className={`${styles.header}`}>
       <Link href="/">
         <a className={styles.logoBox}>
           <HomeLogo />

@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 import NavButton from '../components/buttons/NavButton';
 import GalleryLogo from '../svgicons/GalleryLogo';
 
