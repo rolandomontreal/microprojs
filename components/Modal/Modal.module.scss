@@ -1,0 +1,30 @@
+.outerContainer {
+  position: fixed;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(100, 100, 100, .2);
+  backdrop-filter: blur(4px);
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+}
+
+.innerContainer {
+  background-color: white;
+  border-radius: 2rem;
+  padding: 2rem;
+  height: clamp(800px, 90vh, 1000px);
+  width: clamp(600px, 90%, 800px);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 5vh;
+  
+  @media (height > 1000px) {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: clamp(900px, 90vh, 1200px);
+  }
+}
