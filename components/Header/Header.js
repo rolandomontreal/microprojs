@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Header.module.scss';
 import HomeLogo from '../../svgicons/HomeLogo';
-import GalleryLogo from '../../svgicons/GalleryLogo';
 import AboutLogo from '../../svgicons/AboutLogo';
 
 const Header = () => {

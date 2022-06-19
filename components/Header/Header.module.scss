@@ -8,6 +8,11 @@
   padding: 0 16px 0px;
   width: 100vw;
   background-color: $base-color-variant-1;
+  & a {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 }
 
 .logoBox {
