@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './Card.module.scss';
 
 interface CardProps {
@@ -8,12 +9,12 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ backgroundImageUrl, title, subtitle }) => {
   return (
-    <div 
-      className={styles.card}
-      style={{
-        backgroundImage: `url(${backgroundImageUrl})`,
-      }}
-    >
+    <div className={styles.card}>
+      <Image 
+        src={backgroundImageUrl} 
+        layout="fill"
+        objectFit='cover'
+      />
       <h4>{ title }</h4>
       <p>{ subtitle }</p>
     </div>
