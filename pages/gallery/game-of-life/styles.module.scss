@@ -1,13 +1,22 @@
+@import '../../../styles/variables.scss';
+
 .row {
   display: flex;
 }
 
 .cell {
-  border: 1px solid black;
-  height: 40px;
-  width: 40px;
+  border: 1px solid rgba(100, 100, 100, .4);
+  height: 1.2rem;
+  width: 1.2rem;
+  transition: background-color .2s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(100, 100, 100, .4);
+  }
+
+  &.alive {
+    background-color: $base-color-variant-2;
+  }
 }
 
-.cell.dead {
-  background-color: blue;
-}
