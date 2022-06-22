@@ -31,6 +31,24 @@ const pages = [
       desktop: false,
     },
   },
+  {
+    path: '/flubber',
+    title: 'Flubber',
+    description: 'First SVG path morphing with flubber',
+    support: {
+      mobile: true,
+      desktop: true,
+    },
+  },
+  {
+    path: '/framer-motion',
+    title: 'Framer motion',
+    description: 'Some tests with framer motion',
+    support: {
+      mobile: true,
+      desktop: true,
+    },
+  },
 ];
 
 const Gallery = () => {
